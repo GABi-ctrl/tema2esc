@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Duck Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦆 Random Duck API</h1>
+            <p>Generează o rață aleatorie pentru a-ți însenina ziua!</p>
+        </header>
+
+        <main class="card">
+            <div class="image-container">
+                <img id="duck-img" src="https://random-d.uk/api/v2/randomimg" alt="O rață simpatică va apărea aici">
+            </div>
+
+            <div class="info-section">
+                <h3>Detalii Tehnice:</h3>
+                <ul id="duck-details">
+                    <li><strong>Status:</strong> <span id="status-text">Așteptare...</span></li>
+                    <li><strong>Sursă Imagine:</strong> <span id="source-text">-</span></li>
+                </ul>
+            </div>
+
+            <button id="generate-btn">Încarcă o Rață Nouă</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
